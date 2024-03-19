@@ -17,6 +17,7 @@
 
     <!-- Icons Flaticon -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 
     <!-- Tailwind Config  -->
     <script>
@@ -38,6 +39,8 @@
                         'bodonimoda': ['Bodoni Moda', 'serif'],
                         'nunito': ['Nunito', 'sans-serif'],
                         'sono': ['Sono', 'sans-serif'],
+                        'hatoli': ['Hatoli', 'serif'],
+                        'amalfi': ['Amalfi Coast', 'cursive'],
                     }
                 }
             }
@@ -56,16 +59,16 @@
 
         <!-- text content  -->
         <div class="relative z-20 flex flex-col justify-end text-center h-screen p-20 gap-8 text-white">
-            <div class="reveal fade-bottom flex flex-col gap-2 uppercase">
+            <div class=" flex flex-col gap-2 uppercase">
                 <p class="font-cinzel tracking-wider">THE WEDDING OF</p>
-                <h1 class="font-cinzeldecorative text-4xl tracking-widest">ARUL <span class="font-cinzel"> & </span> TINA</h1>
+                <h1 class="font-cinzeldecorative text-3xl tracking-widest">ARUL <span class="font-cinzel"> & </span> TINA</h1>
             </div>
-            <div class="reveal fade-bottom font-nunito text-sm italic flex flex-col gap-1">
+            <div class=" font-nunito text-sm italic flex flex-col gap-1">
                 <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
                 <h1 class="not-italic text-2xl font-bodonimoda font-semibold">Nama Tamu</h1>
                 <p>*Mohon Maaf apabila ada kesalahan pada penulisan nama dan gelar</p>
             </div>
-            <div class="reveal fade-bottom">
+            <div class="">
                 <button class="font-semibold">
                     <div class="flex items-center justify-center gap-2 border-white border-x-4 text-white py-2 px-4 rounded hover:border-0 hover:bg-secondary">
                         <i class="fi fi-rr-envelope-open-text"></i>
@@ -82,8 +85,6 @@
     <div class="relative">
         <!-- background  -->
         <div class="absolute inset-0 z-0 h-screen">
-            <!-- <img src="./assets/image/foto_utama (1).jpg" class="object-cover w-full h-screen" alt=""> -->
-
             <!-- gambar slide dengan flowbite  -->
             <div id="custom-controls-gallery" class="relative" data-carousel="slide">
                 <!-- Carousel wrapper -->
@@ -109,11 +110,11 @@
         </div>
         
         <!-- content  -->
-        <div class="relative z-10 flex flex-col h-screen justify-end p-3 text-white">
-            <div class="flex flex-col gap-4 bg-secondary bg-opacity-50 pt-6 p-4 md:p-10 rounded-tr-3xl">
+        <div class="relative z-10 flex flex-col h-screen justify-end p-5 text-white">
+            <div class="flex flex-col gap-2 bg-secondary bg-opacity-50 pt-6 p-4 md:p-10 rounded-tr-3xl">
                 <div class="flex-col gap-3 uppercase">
                     <p class="font-cinzel text-sm tracking-wider">THE WEDDING OF</p>
-                    <h1 class="font-cinzeldecorative text-4xl tracking-widest">ARUL <span class="font-cinzel"> & </span> TINA</h1>
+                    <h1 class="font-cinzeldecorative text-3xl md:text-3xl tracking-widest">ARUL <span class="font-cinzel"> & </span> TINA</h1>
                 </div>
                 <div class="flex gap-4 text-sm">
                     <div class="flex flex-col items-center">
@@ -136,7 +137,7 @@
                 <div>
                     <button class="font-medium text-sm">
                         <div class="flex items-center justify-center gap-2 border-white border-x-4 text-white py-1 px-3 rounded hover:border-0 hover:bg-secondary">
-                            <i class="fi fi-rr-envelope-open-text"></i>
+                            <i class="fi fi-rs-calendar"></i>
                             <span>Save to Calender</span>
                         </div>
                     </button>
@@ -146,9 +147,71 @@
     </div>
 
     <!-- Surah Section -->
-    <div></div>
+    <div class="relative">
+        <!-- background  -->
+        <div class="absolute inset-0 z-0 grid grid-cols-2">
+            <div class="bg-gradient-to-r from-primary to-secondary h-full"></div>
+            <div class="bg-gradient-to-l from-primary to-secondary h-full"></div>
+        </div>
+
+        <!-- content  -->
+        <div class="relative z-10  text-white">
+            <h1 class="reveal fade-bottom text-6xl font-hatoli text-center p-8 md:p-16">AT</h1>
+            <!-- Carousel foto  -->
+            <div class="reveal fade-bottom">
+                <div class="flex gap-2 justify-center">
+                    <div>
+                        <img src="./assets/image/foto_gallery (1).jpg" class="rounded-lg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/image/foto_gallery (2).jpg" class="rounded-lg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/image/foto_gallery (3).jpg" class="rounded-lg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/image/foto_gallery (4).jpg" class="rounded-lg" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/image/foto_gallery (5).jpg" class="rounded-lg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- text content  -->
+            <div class="reveal fade-bottom font-bodonimoda text-center py-8 px-3 md:p-16">
+                <p class="tracking-wider text-xs md:text-base">
+                    Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.
+                </p>
+                <p class="mt-4 tracking-wider text-xs md:text-base">
+                    (Q.S Ar Rum : 21)
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!-- Groom & Bride Saection  -->
+    <div class="bg-white min-h-screen p-8">
+        <div class="text-center md:mx-64 flex flex-col gap-2">
+            <h1 class="font-amalfi text-sm md:text-2xl my-4">Assalamualaikum Wr. Wb.</h1>
+            <p class="text-xs md:text-lg tracking-wider mt-1">
+                Dengan memohon Rahmat dan Ridho Allah SWT, Kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dalam pernikahan kami
+            </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center gap-4 py-8">
+            <div class="flex bg-primary rounded-tr-3xl mr-24">
+                <div class="text-white">The Grooms</div>
+                <div>
+                    <div>
+                        <img src="./assets/image/foto_catin_lakilaki.jpg" class="rounded-tr-3xl object-cover" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>&</div>
+            <div>Bride</div>
+        </div>
+    </div>
 
     <!-- Weeding Event  -->
 
