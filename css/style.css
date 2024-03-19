@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: Amalfi Coast;
-    src: url(/assets/font/Amalfi-Coast.ttf);
+    src: url(./assets/font/Amalfi-Coast.ttf);
 }
 .reveal {
     position: relative;
