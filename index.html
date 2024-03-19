@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Digital</title>
+
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+
+    <!-- Icons Flaticon -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <!-- Tailwind Config  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2F495C",
+                        secondary: "#7895A8",
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'cinzeldecorative': ['Cinzel Decorative', 'cursive'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'quicksand': ['Quicksand', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'worksans': ['Work Sans', 'sans-serif'],
+                        'yesevaone': ['Yeseva One', 'cursive'],
+                        'bodonimoda': ['Bodoni Moda', 'serif'],
+                        'nunito': ['Nunito', 'sans-serif'],
+                        'sono': ['Sono', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-quicksand">
+    <!-- Cover Open Invitation  -->
+    <div class="relative min-h-screen ">
+        <!-- image background  -->
+        <img src="/assets/image/foto-cover.jpg" class="w-full h-screen object-cover absolute z-0 alt="">
+        <div class=" absolute inset-0 z-10 grid">
+            <div class="bg-gradient-to-t from-primary to-transparent bg-opacity-100"></div>
+        </div>
+
+        <!-- text content  -->
+        <div class="relative z-20 flex flex-col justify-end text-center h-screen p-20 gap-8 text-white">
+            <div class="reveal fade-bottom flex flex-col gap-2 uppercase">
+                <p class="font-cinzel tracking-wider">THE WEDDING OF</p>
+                <h1 class="font-cinzeldecorative text-4xl tracking-widest">ARUL <span class="font-cinzel"> & </span> TINA</h1>
+            </div>
+            <div class="reveal fade-bottom font-nunito text-sm italic flex flex-col gap-1">
+                <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+                <h1 class="not-italic text-2xl font-bodonimoda font-semibold">Nama Tamu</h1>
+                <p>*Mohon Maaf apabila ada kesalahan pada penulisan nama dan gelar</p>
+            </div>
+            <div class="reveal fade-bottom">
+                <button class="font-semibold">
+                    <div class="flex items-center justify-center gap-2 border-white border-x-4 text-white py-2 px-4 rounded hover:border-0 hover:bg-secondary">
+                        <i class="fi fi-rr-envelope-open-text"></i>
+                        <span>Open Invitation</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Bar  -->
+
+    <!-- Hero Section  -->
+    <div class="relative">
+        <!-- background  -->
+        <div class="absolute inset-0 z-0 h-screen">
+            <!-- <img src="./assets/image/foto_utama (1).jpg" class="object-cover w-full h-screen" alt=""> -->
+
+            <!-- gambar slide dengan flowbite  -->
+            <div id="custom-controls-gallery" class="relative" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-screen w-full overflow-hidden">
+                     <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/image/foto_utama (1).jpg" class="absolute block w-full h-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="./assets/image/foto_utama (2).jpg" class="absolute block w-full h-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/image/foto_utama (1).jpg" class="absolute block w-full h-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="./assets/image/foto_utama (2).jpg" class="absolute block w-full h-screen object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- content  -->
+        <div class="relative z-10 flex flex-col h-screen justify-end p-3 text-white">
+            <div class="flex flex-col gap-4 bg-secondary bg-opacity-50 pt-6 p-4 md:p-10 rounded-tr-3xl">
+                <div class="flex-col gap-3 uppercase">
+                    <p class="font-cinzel text-sm tracking-wider">THE WEDDING OF</p>
+                    <h1 class="font-cinzeldecorative text-4xl tracking-widest">ARUL <span class="font-cinzel"> & </span> TINA</h1>
+                </div>
+                <div class="flex gap-4 text-sm">
+                    <div class="flex flex-col items-center">
+                        <h1 class="text-2xl font-medium">11</h1>
+                        <p>Day</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h1 class="text-2xl font-medium">19</h1>
+                        <p>Hour</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h1 class="text-2xl font-medium">57</h1>
+                        <p>Min</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <h1 class="text-2xl font-medium">09</h1>
+                        <p>Sec</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="font-medium text-sm">
+                        <div class="flex items-center justify-center gap-2 border-white border-x-4 text-white py-1 px-3 rounded hover:border-0 hover:bg-secondary">
+                            <i class="fi fi-rr-envelope-open-text"></i>
+                            <span>Save to Calender</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Surah Section -->
+    <div></div>
+
+    <!-- Groom & Bride Saection  -->
+
+    <!-- Weeding Event  -->
+
+    <!-- Love Story Section  -->
+
+    <!-- Gallery Section -->
+
+    <!-- RSVp Section  -->
+
+    <!-- Gift Section  -->
+
+    <!-- Footer  -->
+
+    <!-- JS  -->
+    <script src="./js/script.js"></script>
+    <!-- Flowbite  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    
+</body>
+
+</html>
