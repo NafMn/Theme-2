@@ -27,7 +27,7 @@
 
 .slide-autoplay {
     /* display: inline-block; */
-    animation: 35s slide infinite linear;
+    animation: 40s slide infinite linear;
 }
 
 .slide-autoplay img {
