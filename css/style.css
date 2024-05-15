@@ -15,6 +15,10 @@
     src: url(/assets/font/Amalfi-Coast.ttf);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Slide Autoplay Infinity  */
 @keyframes slide {
     from{
