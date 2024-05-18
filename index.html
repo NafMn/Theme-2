@@ -60,7 +60,7 @@
         <div class="hidden md:flex md:col-span-2">
           <div class="sticky top-0 left-0 w-screen h-screen overflow-hidden">
             <div class="relative w-full h-full bg-gray-200">
-              <img src="./assets/image/catin-1.jpg" class="object-cover w-full h-screen" />
+              <img src="./assets/image/foto-cover.jpg" class="object-cover w-full h-screen" />
               <div class="absolute h-full inset-0 z-0">
                 <div class="bg-gradient-to-t from-primary to-transparent bg-opacity-100 h-full"></div>
               </div>
@@ -218,14 +218,14 @@
                             <img src="./assets/image/foto_gallery (5).jpg" class="rounded-lg" alt="">
                             <img src="./assets/image/foto_gallery (5).jpg" class="rounded-lg" alt="">
                         </div>
-                        <div class="slide-autoplay flex">
+                        <!-- <div class="slide-autoplay flex">
                             <img src="./assets/image/foto_gallery (1).jpg" class="rounded-lg" alt="">
                             <img src="./assets/image/foto_gallery (2).jpg" class="rounded-lg" alt="">
                             <img src="./assets/image/foto_gallery (3).jpg" class="rounded-lg" alt="">
                             <img src="./assets/image/foto_gallery (4).jpg" class="rounded-lg" alt="">
                             <img src="./assets/image/foto_gallery (5).jpg" class="rounded-lg" alt="">
                             <img src="./assets/image/foto_gallery (5).jpg" class="rounded-lg" alt="">
-                        </div>
+                        </div> -->
                     </div>
         
                     <!-- text content  -->
@@ -490,7 +490,7 @@
             </div>
         
             <!-- Gallery Section -->
-            <div class="min-h-screen py-6">
+            <div class="min-h-screen pt-6">
                 <div class="grid grid-cols-3 items-center text-center p-2">
                     <hr class="border-3">
                     <h1 class="font-cinzeldecorative text-2xl tracking-widest text-colortext">Gallery</h1>
@@ -557,7 +557,9 @@
                             </div>
                         </div>
                     </div>
-                    
+                </div>
+                <div>
+                    <iframe class="h-[315px] w-full" src="https://www.youtube.com/embed/ojodJ2BEmZk?si=tVWwwk_CIZLuXUpW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         
@@ -566,12 +568,47 @@
         
             <!-- Gift Section  -->
             <div class="p-8 bg-secondary">
-                <div class="text-white grid grid-cols-2 items-center">
-                    <h1 class="font-cinzeldecorative text-3xl tracking-widest">Gift</h1>
-                    <hr class="border-2">
-                </div>
-                <div>
-                       
+                <div class="text-center text-white">
+                    <h1 class="font-cinzeldecorative text-xl tracking-widest">Angpao Digital</h1>
+                    <p class="text-sm my-5">
+                        Kehadiran & doa Anda adalah hadiah terindah untuk kami, namun jika Anda ingin memberi lebih, silakan gunakan informasi di bawah ini
+                    </p>
+                    <button id="toggleButton" onclick="toggleGift()" class="px-4 py-1 border border-white text-xs text-white rounded-3xl hover:bg-primary hover:text-white">
+                        Tampilkan
+                    </button>
+                    <div id="hiddenText" class="mt-2 mx-3 text-xs text-white hidden">
+                        <h1 class="text-sm font-medium font-cinzel p-5">Detail Rekening</h1>
+                        <div class="bg-white p-4 md:p-6 md:px-19 rounded-lg text-left text-colortext">
+                            <div class="flex justify-between items-between">
+                                <img src="./assets/icons/chip.png" class="w-10 mb-3">
+                                <img src="./assets/icons/logo-bca.svg" class="w-20">
+                            </div>
+              
+                            <p class="text-sm font-semibold">An. Dwi Agustina</p>
+                            <p class="text-sm" id="accountNumber">0123456789</p>
+              
+                            <button id="copyAccountButton" onclick="copyToClipboard(this)" data-original-text="Salin No. Rekening" class="bg-gray-500 hover:bg-gray-600 text-white p-2 rounded-lg text-xs mt-3 copy-button">
+                              <i class="fi fi-ss-copy-alt"></i>
+                              Salin No. Rekening
+                            </button>
+                        </div>
+
+                        <!-- Alamat Pengiriman Kado  -->
+                        <h1 class="text-sm font-medium font-cinzel p-5">Alamat Pengiriman Kado</h1>
+                        <div class="bg-white p-4 md:p-6 md:px-10 rounded-lg text-colortext text-center">
+                           <i class="fi fi-rs-gift text-4xl"></i>
+                            <p class="text-sm" id="address">
+                                <span class="font-semibold">Dwi Agustina</span><br>
+                                Dusun Mungkung RT 01 RW 01, Desa Wonorejo
+                            </p>
+              
+                            <button id="copyAddressButton" onclick="copyToClipboard(this)" data-original-text="Salin Alamat" class="bg-gray-500 hover:bg-gray-600 text-white p-2 rounded-lg text-xs mt-3 copy-button">
+                              <i class="fi fi-ss-copy-alt"></i>
+                              Salin Alamat
+                            </button>
+                        </div>
+                    </div>
+    
                 </div>
             </div>
         
@@ -602,17 +639,14 @@
                         <div class="flex flex-col self-end">
                             <div class="flex flex-col gap-2 bg-white rounded-tr-3xl p-5 mr-20 ml-3">
                                 <p class="italic font-medium">Kami yang berbahagia</p>
-                                <h1 class="font-cinzeldecorative text-3xl tracking-widest">ARUL <span
-                                        class="font-cinzel"> & </span> TINA</h1>
+                                <h1 class="font-cinzeldecorative text-3xl tracking-widest">ARUL <span class="font-cinzel"> & </span> TINA</h1>
                             </div>
                             <div class="bg-primary text-white text-center flex flex-col items-center justify-center p-5">
                                 <p>Made with &hearts; by</p>
                                 <img src="./assets/logo/flexdev-white.png" class="w-32 my-3" alt="">
                                 <div class="gap-3 mt-3">
-                                    <i
-                                        class="fi fi-brands-whatsapp bg-white text-primary p-1 rounded-full hover:bg-primary hover:text-white"></i>
-                                    <i
-                                        class="fi fi-brands-instagram bg-white text-primary p-1 rounded-full hover:bg-primary hover:text-white"></i>
+                                    <i class="fi fi-brands-whatsapp bg-white text-primary p-1 rounded-full hover:bg-primary hover:text-white"></i>
+                                    <i class="fi fi-brands-instagram bg-white text-primary p-1 rounded-full hover:bg-primary hover:text-white"></i>
                                 </div>
                             </div>
                         </div>

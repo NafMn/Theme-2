@@ -1,21 +1,21 @@
 //fungsi untuk scroll fade
 function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-  
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-  
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
     }
   }
-  
-  window.addEventListener("scroll", reveal);
+}
+
+window.addEventListener("scroll", reveal);
 
 //modal galery
 function openModal(imageSrc) {
@@ -26,3 +26,43 @@ function openModal(imageSrc) {
 function closeModal() {
   document.getElementById('imageModal').classList.add('hidden');
 }
+
+//button angpao digital
+function toggleGift() {
+  const textElement = document.getElementById('hiddenText');
+  const buttonElement = document.getElementById('toggleButton');
+  if (textElement.classList.contains('hidden')) {
+    textElement.classList.remove('hidden');
+    buttonElement.textContent = 'Sembunyikan';
+  } else {
+    textElement.classList.add('hidden');
+    buttonElement.textContent = 'Tampilkan';
+  }
+}
+
+//Clipboard
+function copyToClipboard(button) {
+  const textElement = button.previousElementSibling;
+  const textToCopy = textElement.textContent;
+  navigator.clipboard.writeText(textToCopy).then(() => {
+      button.innerHTML = 'Teks Disalin!';
+      setTimeout(() => {
+          button.innerHTML = '<i class="fi fi-ss-copy-alt"></i> ' + button.dataset.originalText;
+      }, 2000);
+  }).catch(err => {
+      console.error('Gagal menyalin teks: ', err);
+  });
+}
+
+// function copyToClipboard() {
+//   const textToCopy = document.getElementById('textToCopy').textContent;
+//   navigator.clipboard.writeText(textToCopy).then(() => {
+//     const buttonElement = document.getElementById('clipboardButton');
+//     buttonElement.textContent = 'Teks Disalin!';
+//     setTimeout(() => {
+//       buttonElement.innerHTML = '<i class="fi fi-ss-copy-alt"></i> Salin No. Rekening';
+//     }, 2000);
+//   }).catch(err => {
+//     console.error('Gagal menyalin teks: ', err);
+//   });
+// }
