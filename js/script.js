@@ -53,16 +53,3 @@ function copyToClipboard(button) {
       console.error('Gagal menyalin teks: ', err);
   });
 }
-
-// function copyToClipboard() {
-//   const textToCopy = document.getElementById('textToCopy').textContent;
-//   navigator.clipboard.writeText(textToCopy).then(() => {
-//     const buttonElement = document.getElementById('clipboardButton');
-//     buttonElement.textContent = 'Teks Disalin!';
-//     setTimeout(() => {
-//       buttonElement.innerHTML = '<i class="fi fi-ss-copy-alt"></i> Salin No. Rekening';
-//     }, 2000);
-//   }).catch(err => {
-//     console.error('Gagal menyalin teks: ', err);
-//   });
-// }
