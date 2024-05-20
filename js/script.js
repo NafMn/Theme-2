@@ -1,3 +1,18 @@
+// Cover 
+function closeCover() {
+  const coverModal = document.getElementById('cover-modal');
+  const mainContent = document.getElementById('main-content');
+  
+  coverModal.classList.add('slide-up');
+  coverModal.addEventListener('transitionend', () => {
+      coverModal.classList.add('hidden');
+      mainContent.classList.remove('hidden');
+      setTimeout(() => {
+          mainContent.classList.add('fade-in');
+      }, 10);  // Small delay to ensure 'hidden' class is applied before fade-in
+  }, { once: true });
+}
+
 //fungsi untuk scroll fade
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -54,25 +69,4 @@ function copyToClipboard(button) {
   });
 }
 
-// function scrollToContent() {
-//   document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
-// }
 
-// function closeCover() {
-//   document.getElementById('cover-modal').classList.add('hidden');
-//   document.getElementById('main-content').classList.remove('hidden');
-// }
-
-function closeCover() {
-  const coverModal = document.getElementById('cover-modal');
-  const mainContent = document.getElementById('main-content');
-  
-  coverModal.classList.add('slide-up');
-  coverModal.addEventListener('transitionend', () => {
-      coverModal.classList.add('hidden');
-      mainContent.classList.remove('hidden');
-      setTimeout(() => {
-          mainContent.classList.add('fade-in');
-      }, 10);  // Small delay to ensure 'hidden' class is applied before fade-in
-  }, { once: true });
-}
