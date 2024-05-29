@@ -54,7 +54,7 @@
     </script>
 </head>
 
-<body class="font-quicksand max-w-screen no-scrollbar">
+<body data-email="nafis@nafisdvlp.my.id" data-password="admin123" class="font-quicksand max-w-screen no-scrollbar">
     <div class="lg:grid lg:grid-cols-3 lg:min-h-screen">
         <!-- Image md  -->
         <div class="hidden md:flex md:col-span-2">
@@ -626,23 +626,23 @@
                         <h1 class="reveal fade-bottom  text-center pt-7 pb-4 font-cinzeldecorative text-xl tracking-widest">Ucapan & RSVP</h1>
     
                         <div class="grid grid-cols-1 gap-5 reveal fade-bottom  text-white p-4 border border-secondary rounded-xl ">
-                            <form action="" class="grid grid-cols-1 gap-4">
+                            <form  class="grid grid-cols-1 gap-4">
                                 <div>
-                                    <label for="nama_und" class="block mb-2 text-sm font-medium">Nama</label>
-                                    <input type="text" id="nama_und" name="name_und" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Nama" required />
+                                    <label for="commenter_name" class="block mb-2 text-sm font-medium">Nama</label>
+                                    <input type="text" id="commenter_name" name="commenter_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Nama" required />
                                 </div>
                                 <div>
                                     <label for="kehadiran" class="block mb-2 text-sm font-medium">Kehadiran</label>
                                     <select id="kehadiran" name="kehadiran" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Pilih" required>
                                         <option value="">--Pilih--</option>
-                                        <option value="hadir">Hadir</option>
-                                        <option value="belum-tau">Belum Tahu</option>
-                                        <option value="tidak-hadir">Tidak Hadir</option>
+                                        <option value="Hadir">Hadir</option>
+                                        <option value="Belum Tau">Belum Tahu</option>
+                                        <option value="Tidak Hadir">Tidak Hadir</option>
                                     </select>
                                 </div>
                                 <div>
-                                    <label for="ucapan" class="block mb-2 text-sm font-medium">Ucapan & Doa</label>
-                                    <textarea id="ucapan" name="ucapan" rows="4" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Tulis ucapan dan doa Anda untuk mempelai" required></textarea>
+                                    <label for="content" class="block mb-2 text-sm font-medium">Ucapan & Doa</label>
+                                    <textarea id="content" name="content" rows="4" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Tulis ucapan dan doa Anda untuk mempelai" required></textarea>
                                 </div>
                                 <div class="justify-self-end">
                                     <button type="submit" class="bg-secondary py-2 px-6 text-sm rounded-lg hover:bg-primary hover:border hover:border-secondary focus:ring-blue-500 focus:border-blue-500">Kirim</button>
@@ -652,62 +652,10 @@
                             <div>
                                 <hr class="border-3 border-secondary">
                             </div>
-                            
-                            <div class="grid grid-cols-1 gap-4 overflow-y-auto h-[500px] overscroll-auto no-scrollbar">
-                                <div class="flex items-start gap-2.5 mr-5">
-                                    <div class="w-8 h-8 rounded-full bg-white text-center">
-                                        <h1 class="font-bold text-primary p-1 text-xl font-cinzeldecorative">B</h1>
-                                    </div>
-                                    <div class="flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl">
-                                        <div class="flex items-center space-x-2 rtl:space-x-reverse">
-                                            <span class="text-sm font-semibold text-colortext">Bonnie Green</span>
-                                            <span class="text-sm font-semibold text-green-600">Hadir</span>
-                                        </div>
-                                        <p class="text-sm font-normal py-2.5 text-gray-900">That's awesome. I think our users will really appreciate the improvements.</p>
-                                        <span class="text-xs font-normal text-gray-500">24/05/2024     11.30</span>
-                                    </div>  
-                                </div>
-                                <div class="flex items-start gap-2.5 mr-5">
-                                    <div class="w-8 h-8 rounded-full bg-white text-center">
-                                        <h1 class="font-bold text-primary p-1 text-xl font-cinzeldecorative">B</h1>
-                                    </div>
-                                    <div class="flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl">
-                                        <div class="flex items-center space-x-2 rtl:space-x-reverse">
-                                            <span class="text-sm font-semibold text-colortext">Bonnie Green</span>
-                                            <span class="text-sm font-semibold text-green-600">Hadir</span>
-                                        </div>
-                                        <p class="text-sm font-normal py-2.5 text-gray-900">That's awesome. I think our users will really appreciate the improvements.</p>
-                                        <span class="text-xs font-normal text-gray-500">24/05/2024     11.30</span>
-                                    </div>  
-                                </div>
-                                <div class="flex items-start gap-2.5 mr-5">
-                                    <div class="w-8 h-8 rounded-full bg-white text-center">
-                                        <h1 class="font-bold text-primary p-1 text-xl font-cinzeldecorative">B</h1>
-                                    </div>
-                                    <div class="flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl">
-                                        <div class="flex items-center space-x-2 rtl:space-x-reverse">
-                                            <span class="text-sm font-semibold text-colortext">Bonnie Green</span>
-                                            <span class="text-sm font-semibold text-green-600">Hadir</span>
-                                        </div>
-                                        <p class="text-sm font-normal py-2.5 text-gray-900">That's awesome. I think our users will really appreciate the improvements.</p>
-                                        <span class="text-xs font-normal text-gray-500">24/05/2024     11.30</span>
-                                    </div>  
-                                </div>
-                                <div class="flex items-start gap-2.5 mr-5">
-                                    <div class="w-8 h-8 rounded-full bg-white text-center">
-                                        <h1 class="font-bold text-primary p-1 text-xl font-cinzeldecorative">B</h1>
-                                    </div>
-                                    <div class="flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl">
-                                        <div class="flex items-center space-x-2 rtl:space-x-reverse">
-                                            <span class="text-sm font-semibold text-colortext">Bonnie Green</span>
-                                            <span class="text-sm font-semibold text-green-600">Hadir</span>
-                                        </div>
-                                        <p class="text-sm font-normal py-2.5 text-gray-900">That's awesome. I think our users will really appreciate the improvements.</p>
-                                        <span class="text-xs font-normal text-gray-500">24/05/2024     11.30</span>
-                                    </div>  
-                                </div>
-                                
-                            </div>
+
+                            <!-- Komentar -->
+                            <div id="komentar"></div>
+
                         </div>
                     </div>
                 </div>
@@ -761,6 +709,7 @@
     </div>
     <!-- JS  -->
     <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
     <!-- Flowbite  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
