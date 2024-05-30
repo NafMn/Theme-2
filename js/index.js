@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     loginData.append('email', email);
     loginData.append('password', password);
 
-    fetch('http://127.0.0.1:8000/api/v1/login', {
+    fetch('https://api.flexation.flexdev.site/api/v1/login', {
         method: 'POST',
         body: loginData
     })
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             commentFormData.append('user_id', iduser);
     
             try {
-                const response = await fetch('http://127.0.0.1:8000/api/v1/comments', {
+                const response = await fetch('https://api.flexation.flexdev.site/api/v1/comments', {
                     method: 'POST',
                     body: commentFormData
                 });
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Function untuk mengambil dan menampilkan komentar
     function getComments(user_id) {
-        const url = `http://127.0.0.1:8000/api/v1/comments/user/${user_id}`;
+        const url = `https://api.flexation.flexdev.site/api/v1/comments/user/${user_id}`;
 
         fetch(url)
             .then(response => response.json())
