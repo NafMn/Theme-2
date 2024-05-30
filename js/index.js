@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
                     const commentDiv = document.createElement('div');
-                    commentDiv.className = 'grid grid-cols-1 gap-2 overflow-y-auto h-[150px] overscroll-auto no-scrollbar';
+                    commentDiv.className = 'flex flex-col gap-4 h-[130px]';
                     commentDiv.innerHTML = `
                         <div class="flex items-start gap-2.5 mr-5">
                             <div class="w-8 h-8 rounded-full bg-white text-center">
