@@ -11,9 +11,9 @@ function closeCover() {
           mainContent.classList.add('fade-in');
       }, 10);  // Small delay to ensure 'hidden' class is applied before fade-in
   }, { once: true });
+  audio.play();
 }
 
-// Music Player 
 function playMusic() {
   const audio = document.getElementById('audio');
   const rotateButton = document.getElementById('rotateButton');
