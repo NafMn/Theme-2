@@ -109,9 +109,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
                     const commentDiv = document.createElement('div');
-                    commentDiv.className = 'flex flex-col gap-4 h-[130px]';
+                    commentDiv.className = 'flex flex-col py-4 h-[130px]';
                     commentDiv.innerHTML = `
-                        <div class="flex items-start gap-2.5 mr-5">
+                        <div class="flex items-start gap-2.5 my-2 mr-5">
                             <div class="w-8 h-8 rounded-full bg-white text-center">
                                 <h1 class="font-bold text-primary p-1 text-xl font-cinzeldecorative">${comment.commenter_name.charAt(0)}</h1>
                             </div>

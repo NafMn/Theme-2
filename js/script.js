@@ -13,6 +13,18 @@ function closeCover() {
   }, { once: true });
 }
 
+// Music Player 
+document.getElementById('rotateButton').addEventListener('click', function() {
+  this.classList.toggle('spin');
+  var audio = document.getElementById('audio');
+  if (audio.paused) {
+      audio.play();
+  } else {
+      audio.pause();
+  }
+});
+
+
 //fungsi untuk scroll fade
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
