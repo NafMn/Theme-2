@@ -14,14 +14,34 @@ function closeCover() {
 }
 
 // Music Player 
-document.getElementById('rotateButton').addEventListener('click', function() {
-  this.classList.toggle('spin');
-  var audio = document.getElementById('audio');
-  if (audio.paused) {
+function playMusic() {
+  const audio = document.getElementById('audio');
+  const rotateButton = document.getElementById('rotateButton');
+
+  function toggleAudio() {
+    if (audio.paused) {
       audio.play();
-  } else {
+      rotateButton.classList.add('spin');
+    } else {
       audio.pause();
+      rotateButton.classList.remove('spin');
+    } 
   }
+
+  rotateButton.addEventListener('click', toggleAudio);
+
+  // Tambahkan event listener untuk mematikan musik
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      audio.pause();
+      rotateButton.classList.remove('spin');
+    }
+  });
+}
+
+// Panggil fungsi playMusic ketika dokumen selesai dimuat
+document.addEventListener('DOMContentLoaded', function() {
+  playMusic();
 });
 
 
