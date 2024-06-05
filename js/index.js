@@ -6,6 +6,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     const email = document.body.getAttribute('data-email');
     const password = document.body.getAttribute('data-password');
 
+    // tamu
+    const urlParams = new URLSearchParams(window.location.search);
+    const tamu = urlParams.get('tamu');
+
+    const namaTamu = document.getElementById('nama-tamu');
+    namaTamu.innerText = tamu;
+    const formTamu = document.getElementById('commenter_name');
+    formTamu.value = tamu;
+
     const loginData = new FormData();
     // Siapkan data untuk dikirim
     loginData.append('email', email);
@@ -23,9 +32,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         })
         .then(data => {
             // Proses data balasan dari server di sini
-            console.log('Login Berhasil Coii');
+            // console.log('Login Berhasil Coii');
             const iduser = data.user_id;
-            console.log('User ID:', iduser);
+            // console.log('User ID:', iduser);
 
             getComments(iduser);
             form.addEventListener('submit', (e) => {
