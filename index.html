@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Undangan Digital</title>
+    <link rel="icon" href="./assets/logo/logo-flexation.png">
+    <title>FLEXTATION | Undangan Nikah Rida & Novi</title>
 
     <!-- tailwind  -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -183,26 +184,26 @@
                             </div>
                             <div class="flex gap-4 text-sm">
                                 <div class="flex flex-col items-center">
-                                    <h1 class="text-2xl font-medium">11</h1>
+                                    <h1 id="days" class="text-2xl font-medium"></h1>
                                     <p>Day</p>
                                 </div>
                                 <div class="flex flex-col items-center">
-                                    <h1 class="text-2xl font-medium">19</h1>
+                                    <h1 id="hours" class="text-2xl font-medium"></h1>
                                     <p>Hour</p>
                                 </div>
                                 <div class="flex flex-col items-center">
-                                    <h1 class="text-2xl font-medium">57</h1>
+                                    <h1 id="minutes" class="text-2xl font-medium"></h1>
                                     <p>Min</p>
                                 </div>
                                 <div class="flex flex-col items-center">
-                                    <h1 class="text-2xl font-medium">09</h1>
+                                    <h1 id="seconds" class="text-2xl font-medium"></h1>
                                     <p>Sec</p>
                                 </div>
                             </div>
                             <div>
-                                <button class="font-medium text-sm">
+                                <button id="save-to-calender" class="font-medium text-sm flex items-center justify-center gap-2 border-white border-x-4 text-white py-1 px-3 rounded hover:bg-white hover:text-colortext">
                                     <div
-                                        class="flex items-center justify-center gap-2 border-white border-x-4 text-white py-1 px-3 rounded hover:bg-white hover:text-colortext">
+                                        class="">
                                         <i class="fi fi-rs-calendar"></i>
                                         <span>Save to Calender</span>
                                     </div>
@@ -753,10 +754,16 @@
                                 </div>
                                 <div class="bg-primary text-white text-center flex flex-col items-center justify-center p-5">
                                     <p>Made with &hearts; by</p>
-                                    <img src="./assets/logo/flexdev-white.png" class="w-32 my-3" alt="">
+                                    <a href="https://flexation.site">
+                                        <img src="./assets/logo/flexdev-white.png" class="w-32 my-3" alt="">
+                                    </a>
                                     <div class="gap-3 mt-3">
-                                        <i class="fi fi-brands-whatsapp bg-white text-primary p-1 rounded-full hover:bg-primary hover:text-white"></i>
-                                        <i class="fi fi-brands-instagram bg-white text-primary p-1 rounded-full hover:bg-primary hover:text-white"></i>
+                                        <a href="https://wa.me/6285732705891">
+                                            <i class="fi fi-brands-whatsapp bg-white text-primary p-1 rounded-full hover:bg-primary hover:text-white"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/euphoria.flex/">
+                                            <i class="fi fi-brands-instagram bg-white text-primary p-1 rounded-full hover:bg-primary hover:text-white"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
